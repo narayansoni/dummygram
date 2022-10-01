@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Avatar } from '@mui/material'
+import Avatar from '@mui/material/Avatar';
 import { db } from '../firebase';
 import firebase from 'firebase/compat/app';
 
@@ -38,6 +38,7 @@ function Post(prop) {
             className='post__avatar'
             alt={username}
             src={avatar}
+            sx={{ bgcolor: 'Orange' }}
         />
         <h3 className='post__username'>{username}</h3>
       </div>
